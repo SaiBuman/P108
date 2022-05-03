@@ -25,12 +25,10 @@ function gotResults(error, results) {
 
     img = document.getElementById('animal_image');
 
-    if (results[0].label == "Barking") {
+    if (results[0].label == "Dog") {
       img.src = 'dog.gif';
-      dog = dog+1;
-    } else if (results[0].label == "Meowing") {
+    } else if (results[0].label == "Cat") {
       img.src = 'cat.gif';
-      cat = cat + 1;
     } else{
       img.src = 'listen.gif';
     }
